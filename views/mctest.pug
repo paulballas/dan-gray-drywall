@@ -1,0 +1,5 @@
+extends ./layout.pug
+
+block content
+  p am I working?
+  != content.getStructuredText('homepage.mrhero').asHtml(ctx.linkResolver)

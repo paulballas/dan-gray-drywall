@@ -1,0 +1,56 @@
+.header
+  margin-top: ms(0)
+  margin-bottom: ms(0)
+  ul
+    text-align: right
+    padding-left: 0
+    margin-bottom: 0
+    overflow: auto
+    white-space: nowrap
+    li
+      display: inline-block
+      margin-bottom: 0
+      padding: ms(0)
+      a
+        display: block
+        position: relative
+        color: $white
+        text-decoration: none
+        font-size: ms(0)
+        &::before
+          content: ""
+          position: absolute
+          width: 100%
+          height: 2px
+          bottom: 0
+          left: 0
+          background-color: $white
+          visibility: hidden
+          -webkit-transform: scaleX(0)
+          transform: scaleX(0)
+          -webkit-transition: all 0.3s ease-in-out 0s
+          transition: all 0.3s ease-in-out 0s
+        &:hover
+          color: $white
+          &::before
+            visibility: visible
+            -webkit-transform: scaleX(1)
+            transform: scaleX(1)
+        &.active
+          font-family: 'Gilroy-Semibold'
+          border-bottom: 2px solid $white
+  svg
+    vertical-align: middle
+.dark
+  .header
+    ul li a
+      color: $blue
+      &::before
+        background-color: $blue
+      &:hover
+        color: $blue
+      &.active
+        border-bottom: 2px solid $blue
+    svg
+      > path
+        fill: $blue
