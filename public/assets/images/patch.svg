@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400px" height="400px" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>patch</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="patching" transform="translate(-50.000000, -50.000000)" fill="#FFFFFF">
+            <path d="M250,450 C139.54305,450 50,360.45695 50,250 C50,139.54305 139.54305,50 250,50 C360.45695,50 450,139.54305 450,250 C450,360.45695 360.45695,450 250,450 Z M125,125 L125,375 L375,375 L375,125 L125,125 Z M250.5,355 C192.786244,355 146,308.213756 146,250.5 C146,192.786244 192.786244,146 250.5,146 C308.213756,146 355,192.786244 355,250.5 C355,308.213756 308.213756,355 250.5,355 Z M145,146 L165,146 L165,166 L145,166 L145,146 Z M145,335 L165,335 L165,355 L145,355 L145,335 Z M336,335 L356,335 L356,355 L336,355 L336,335 Z M335,146 L355,146 L355,166 L335,166 L335,146 Z" id="patch"></path>
+        </g>
+    </g>
+</svg>

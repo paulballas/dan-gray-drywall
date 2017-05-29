@@ -1,8 +1,8 @@
-.header
+.footer
   margin-top: ms(0)
   margin-bottom: ms(0)
   ul
-    text-align: right
+    text-align: center
     padding-left: 0
     margin-bottom: 0
     overflow: auto
@@ -16,7 +16,7 @@
         position: relative
         color: $brown
         text-decoration: none
-        font-size: ms(1)
+        font-size: ms(0)
         text-transform: uppercase
         &::before
           content: ""
@@ -37,17 +37,12 @@
             visibility: visible
             -webkit-transform: scaleX(1)
             transform: scaleX(1)
-        &.active
-          font-weight: 600
   svg
     vertical-align: middle
-.light
-  .header
+  &.light
     ul li a
       color: $white
       &::before
         background-color: $white
       &:hover
         color: $white
-      &.active
-        border-bottom: 2px solid $white

@@ -1,0 +1,61 @@
+body
+  background: $lightgray
+h1, h2,
+  +font(700)
+h3, h4, h5, h6
+  +font(500)
+p, span, a
+  +font(400)
+b
+  +font(500)
+.extra-bold
+  +font(600)
+.no-underline
+  text-decoration: none
+img
+  &.full-img
+    display: block
+    width: 100%
+  &.center-img
+    margin: 0 auto
+.dark-bg
+  color: $white
+  *
+    color: $white
+.uppercase
+  text-transform: uppercase
+.bg-brown
+  background: $brown
+.bg-red
+  background: $red
+.bg-yellow
+  background: $yellow
+.bg-blue
+  background: $blue
+.bg-green
+  background: $green
+.bg-darkblue
+  background: $darkblue
+.bg-lightgray
+  background: $lightgray
+.bg-darkgray
+  background: $darkgray
+
+.pad-container
+  padding-top: ms(4)
+  padding-bottom: ms(4)
+
+.pad-container-xs
+  padding-top: ms(0)
+  padding-bottom: ms(0)
+
+.separate
+  display: block
+  height: ms(-8)
+  background: $darkgray
+  width: ms(2)
+  margin: 0 auto
+  text-align: center
+  margin-bottom: ms(0)
+a.lg-link
+  font-size: ms(1)

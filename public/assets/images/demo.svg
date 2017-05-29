@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400px" height="400px" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>demo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="demolition" transform="translate(-50.000000, -50.000000)" fill="#FFFFFF">
+            <path d="M250,450 C139.54305,450 50,360.45695 50,250 C50,139.54305 139.54305,50 250,50 C360.45695,50 450,139.54305 450,250 C450,360.45695 360.45695,450 250,450 Z M273.861723,125.606075 L270.451238,129.016554 L226.529453,172.938489 L258.392061,204.800764 L269.951916,193.240837 L277.733852,201.022865 L125.78822,352.968496 L146.373613,373.553994 L298.319243,221.608363 L306.10118,229.390391 L294.531909,240.950318 L326.394513,272.812593 L373.736203,225.480323 L341.8736,193.608401 L330.304325,205.18714 L294.15506,169.038069 L305.724331,157.468639 L273.861723,125.606075 Z" id="demo"></path>
+        </g>
+    </g>
+</svg>

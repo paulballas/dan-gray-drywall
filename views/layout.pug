@@ -32,7 +32,10 @@ html(lang='en' class= classes data-page= page )
     link(rel='manifest', href='/manifest.json')
     link(rel='mask-icon', href='/safari-pinned-tab.svg', color='#414b8b')
     meta(name='theme-color', content='#ffffff')
-    //- Put GA here
+    
+    script(src='https://use.typekit.net/bcs6rzw.js')
+    script.
+      try{Typekit.load({ async: true });}catch(e){}
 
     block css
       link(rel='stylesheet' href='/css/app.css')
@@ -50,38 +53,59 @@ html(lang='en' class= classes data-page= page )
             .col-md-8.col-xs-12
               ul
                 li
-                  a.type-gm(href="/" class=(slug === 'home' ? 'active' : '')) Home
+                  a(href="/" class=(slug === 'home' ? 'active' : '')) Home
                 li
-                  a.type-gm(href="/about" class=(slug === 'about' ? 'active' : '')) About
+                  a(href="/about" class=(slug === 'about' ? 'active' : '')) About
                 li
-                  a.type-gm(href='/portfolio' class=(slug === 'portfolio' ? 'active' : '')) Portfolio
+                  a(href='/portfolio' class=(slug === 'services' ? 'active' : '')) Services
                 li
-                  a.type-gm(href='/design-process' class=(slug === 'process' ? 'active' : '')) Design Process
+                  a(href='/design-process' class=(slug === 'gallery' ? 'active' : '')) Gallery
                 li
-                  a.type-gm(href='/illustrations' class=(slug === 'illustrations' ? 'active' : '')) Illustrations
+                  a(href='/illustrations' class=(slug === 'reviews' ? 'active' : '')) Reviews
                 li
-                  a.type-gm(href='/contact' class=(slug === 'egencia' ? 'contact' : '')) Contact
-
-    block content
-    block footer
-      .footer.bg-darkurple
-        .p-t-xs-1.p-b-xs-1
+                  a(href='/contact' class=(slug === 'contact' ? 'contact' : '')) Contact
+    block contact
+      .contact-banner.bg-red
+        .pad-container-xs
           .container
-            .row.center-xs
-              p.small.type-gm.m-b-xs-0
-                | Personal website of 
-                b Paul Ballas      
-            .row.center-xs
-              .col-xs-12
+            .row
+              .col-xs-12.dark-bg.center-xs
+                p.m-b-xs-0 Send Dan a text 
+                  a.no-underline(href='tel:720921-5596') (720) 921-5596 
+                  | or email 
+                  a.no-underline(href='mailto:dan@dangraydrywall.com') dan@dangraydrywall.com 
+                  | to get started.
+    block content
+    block footer      
+      .footer.bg-blue.light
+        .container
+          .pad-container
+            .row.center-xs.middle-xs
+              .col-md-4.col-xs-12.center-text-xs.dark-bg
+                p Contact for free estimate!                
+                p
+                  a.no-underline(href='tel:720921-5596') (720) 921-5596 
+                p
+                  a.no-underline(href='mailto:dan@dangraydrywall.com') dan@dangraydrywall.com                   
+              .col-md-4.col-xs-12.center-text-xs.m-b-md-0.m-b-xs-1
+                +logolight
+              .col-md-4.col-xs-12.center-text-xs
                 ul
                   li.small
-                    a.type-gm(href='https://twitter.com/paulballas') Twitter
+                    a(href="/" class=('home' ? 'active' : '')) Home
                   li.small
-                    a.type-gm(href='https://github.com/paulballas' target='_blank') GitHub
+                    a(href="/about" class=('about' ? 'active' : '')) About
                   li.small
-                    a.type-gm(href='https://www.linkedin.com/in/paulballas/' target='_blank') LinkedIn
+                    a(href='/portfolio' class=('services' ? 'active' : '')) Services
+                ul
                   li.small
-                    a.type-gm(href='https://dribbble.com/paulballas' target='_blank') Dribbble
+                    a(href='/design-process' class=('gallery' ? 'active' : '')) Gallery
+                  li.small
+                    a(href='/illustrations' class=('reviews' ? 'active' : '')) Reviews
+                  li.small
+                    a(href='/contact' class=('contact' ? 'contact' : '')) Contact
+                  
 
     block scripts
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/zooming/1.1.6/zooming.min.js')
       script(src='/js/app.js')

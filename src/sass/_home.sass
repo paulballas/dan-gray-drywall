@@ -1,3 +1,57 @@
-h1
-  color: red
-  background: blue
+.home
+  .home-hero
+    overflow: hidden
+    position: relative
+    min-height: ms(16)
+    video
+      z-index: 10
+      position: absolute
+      top: 50%
+      left: 50%
+      width: auto
+      height: auto
+      min-width: 100%
+      min-height: 100%
+      transform: translate(-50%,-50%)
+    .video-background-overlay
+      background: rgba($darkblue, 0.7)
+      position: absolute
+      display: block
+      height: 100%
+      width: 100%
+      z-index: 20
+    .container
+      z-index: 40
+      position: relative
+      margin-top: ms(8)
+      +target(md)
+        margin-top: ms(10)
+    .home-icons
+      img
+        margin: 0 auto
+        max-height: ms(6)
+  .home-reviews
+    .review
+      background: $lightgray
+      padding: ms(0)
+      margin-bottom: ms(1)
+      +container-border($darkgray)
+      *
+        color: $black
+      img
+        max-height: ms(3)
+  .home-gallery
+    img
+      width: 100%
+      height: auto
+      margin-bottom: ms(1)
+      margin-left: auto
+      margin-right: auto
+      &:hover
+        cursor: zoom-in
+  .home-services
+    p
+      padding: ms(1)
+      background: $blue
+      color: $white
+      border-radius: 3px

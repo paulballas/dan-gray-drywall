@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400px" height="400px" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>drywall</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="drywall" transform="translate(-50.000000, -50.000000)" fill="#FFFFFF">
+            <path d="M250,450 C139.54305,450 50,360.45695 50,250 C50,139.54305 139.54305,50 250,50 C360.45695,50 450,139.54305 450,250 C450,360.45695 360.45695,450 250,450 Z M125,125 L125,375 L375,375 L375,125 L125,125 Z M145,145 L165,145 L165,165 L145,165 L145,145 Z M145,205 L165,205 L165,225 L145,225 L145,205 Z M145,265 L165,265 L165,285 L145,285 L145,265 Z M145,325 L165,325 L165,345 L145,345 L145,325 Z M240,145 L260,145 L260,165 L240,165 L240,145 Z M335,150 L355,150 L355,170 L335,170 L335,150 Z M240,205 L260,205 L260,225 L240,225 L240,205 Z M335,210 L355,210 L355,230 L335,230 L335,210 Z M240,265 L260,265 L260,285 L240,285 L240,265 Z M335,270 L355,270 L355,290 L335,290 L335,270 Z M240,325 L260,325 L260,345 L240,345 L240,325 Z M335,330 L355,330 L355,350 L335,350 L335,330 Z"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,19 @@
+=btn-style($btn-color)
+  font-weight: 500
+  background: $btn-color
+  border-color: $btn-color
+  &:hover
+    background: darken($btn-color, 10%)
+    border-color: darken($btn-color, 10%)
+
+.btn-default
+  &.btn-blue
+    +btn-color($blue)
+  &.btn-brown
+    +btn-color($brown)
+  &.btn-red
+    +btn-color($red)
+  &.btn-green
+    +btn-color($green)
+  &.btn-yellow
+    +btn-color($yellow)

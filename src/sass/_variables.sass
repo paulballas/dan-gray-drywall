@@ -1,8 +1,22 @@
-$red: #e73d1e
-$yellow: #fdc81a
-$blue: #306aa7
+$brown: #50514F
+$red: #F25F5C
+$yellow: #FFE066
+$blue: #247BA0
+$green: #70C1B3
+$darkblue: darken($blue, 20%)
 
 $black: #4D4D4D
 $white: #FFFFFF
 $lightgray: #F2F2F2
 $darkgray: #D8D7D6
+
+@function color($key)
+  @return map-get($colors, $key)
+
+=font($weight)
+  font-family: "futura-pt",sans-serif
+  font-weight: $weight
+
+=container-border($color)
+  border: ms(-8) solid $color
+  border-radius: 3px

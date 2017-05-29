@@ -26,7 +26,8 @@
     "pug": "^2.0.0-beta11",
     "request": "^2.76.0",
     "serve-favicon": "^2.3.0",
-    "standard": "git+https://github.com/tivonaporter/standard.git"
+    "standard": "git+https://github.com/tivonaporter/standard.git",
+    "zooming": "^1.1.6"
   },
   "devDependencies": {
     "eslint": "^3.11.1"

@@ -1,4 +1,168 @@
-extends ./layout.pug
+extends layout
+
+block settings
+  - var page = 'Home'
+  - var classes = ['home']
+  - var slug = 'home'
 
 block content
-  p #{content.getText('home.home-page-title')}
+  .home-hero
+    video(loop muted autoplay)
+      source(src='https://udso-a.akamaihd.net/3142682442001/3142682442001_4329398319001_4329392487001.mp4' type='video/webm')
+      source(src='https://udso-a.akamaihd.net/3142682442001/3142682442001_4329398319001_4329392487001.mp4' type='video/mp4')
+      source(src='https://udso-a.akamaihd.net/3142682442001/3142682442001_4329398319001_4329392487001.mp4' type='video/ogg')
+    .video-background-overlay                    
+    .container.dark-bg
+      .row
+        .col-xs.center-text-xs
+          h1 #{content.getText('home.home-hero')}
+          h3 #{content.getText('home.home-sub-hero')}
+      .space-2
+      .row.home-icons
+        //- drywall
+        .col-md-2.col-xs-6.center-text-xs
+          img.full-img(src='/assets/images/drywall.svg' alt='drywall icon')
+          .space-1
+          h4.uppercase Drywall
+        //- demo
+        .col-md-2.col-xs-6.center-text-xs
+          img.full-img(src='/assets/images/demo.svg' alt='demolition icon')
+          .space-1
+          h4.uppercase Demolition
+        //- taping
+        .col-md-2.col-xs-6.center-text-xs
+          img.full-img(src='/assets/images/tape.svg' alt='taping icon')
+          .space-1
+          h4.uppercase Taping
+        //- finishing
+        .col-md-2.col-xs-6.center-text-xs
+          img.full-img(src='/assets/images/finish.svg' alt='finishing icon')
+          .space-1
+          h4.uppercase finishing
+        //- texturing
+        .col-md-2.col-xs-6.center-text-xs
+          img.full-img(src='/assets/images/texture.svg' alt='texture icon')
+          .space-1
+          h4.uppercase texturing
+        //- patching
+        .col-md-2.col-xs-6.center-text-xs
+          img.full-img(src='/assets/images/patch.svg' alt='patch icon')
+          .space-1
+          h4.uppercase patching
+      .space-2
+      .row
+        .col-xs-12.center-text-xs
+          a.btn-default.btn-large.uppercase.btn-red(href='/contact') schedule a free estimate
+  
+  //- Reviews
+  .bg-blue.home-reviews
+    .pad-container
+      .container
+        .row
+          .col-xs-12.center-text-xs.dark-bg
+            h3 Hundreds of happy customers.
+        .space-2
+        .row
+          .col-md-6.col-xs-12
+            .review.center-text-xs
+              img.full-img.center-img(src='/assets/images/stars.svg' alt='stars')
+              .space-1
+              p Dan did an amazing job with our older home remodel. We essentially skim coated every wall and ceiling in the entire house. Some of the walls weren't in the best shape and had old texture or pieces of old wallpaper. Dan took care of everything and went above and beyond what we needed him to do. 
+                br
+                br
+                | He also provided excellent communication throughout the process and sent me updates every day. He sent pictures and videos of his work daily, so I knew exactly what was happening throughout the whole process. My and wife and I will definitely be hiring Dan again for future projects.
+              .separate
+              p
+                b Paul B. 
+                br
+                b Denver, CO  
+          .col-md-6.col-xs-12
+            .review.center-text-xs
+              img.full-img.center-img(src='/assets/images/stars.svg' alt='stars')
+              .space-1
+              p Dan saved Christmas! 
+                br
+                br
+                | When our water pipes froze, burst, and destroyed the ceiling in our guest room and guest bathroom while we had visitors Dan came to the rescue.  He arrived mere hours after my phone call to assess the scope of work, and made time in his schedule on Christmas eve to complete the project.  He arrived promptly, worked quickly, and completed all repairs to the highest quality.  He photographed every step of the process and texted the images to me for my records.  In addition to being professional, he is also very friendly.
+              .separate
+              p
+                b Lily B.
+                br
+                b Boulder, CO
+          .col-md-6.col-xs-12
+            .review.center-text-xs
+              img.full-img.center-img(src='/assets/images/stars.svg' alt='stars')
+              .space-1
+              p I can't speak highly enough about Dan and his work! Dan made our 140 year old house look wonderful. We had various issues with our walls and ceilings from cracks, to cheap paneling and Dan put in the time and effort to make everything look amazing.
+                br
+                br
+                | He is a pleasure to interact with and keeps the lines of communication open. 
+              .separate
+              p
+                b Emily W.
+                br
+                b Denver, CO
+                      
+          .col-md-6.col-xs-12
+            .review.center-text-xs
+              img.full-img.center-img(src='/assets/images/stars.svg' alt='stars')
+              .space-1
+              p Dan did an excellent job filling a large (2ft x 2ft) hole we had in our ceiling from relocating a light fixture. He was very thorough and careful, and there was not a speck of dust in our house when he was done. The texturing and blending looked perfect and you wouldn't even know we ever had a hole there. I would recommend Dan to anyone needing any degree of drywall work! 
+              .separate
+              p
+                b Patrick K.
+                br
+                b Denver, CO
+          .col-xs.center-text-xs.dark-bg
+            a.lg-link(href='/reviews' target='_blank') Read all of my reviews   
+  //- meet dan
+  .bg-lightgray
+    .container
+      .row.middle-xs
+        .col-md-6.col-xs-12
+          h2 Meet Dan.
+          p Dan has over 20 years in the construction business and drywall industry. Prior to starting his own company, he worked for years in the field as technician and a superintendent. He strives to provide the best customer service and only the highest quality of craftsmanship for every job. He treats every clinets home as if it were own.
+        .col-md-6.col-xs-12
+          img.full-img(src='/assets/images/dan-gray-headshot.png' alt='Dan Gray Headshot')
+  //- project gallery
+  .bg-brown.home-gallery
+    .container.dark-bg
+      .pad-container
+        .row
+          .col-xs.center-text-xs
+            h3 View my successful projects.
+        .row        
+          each val, index in {1:'one', 2:'two', 3:'three', 4:'four', 5:'five', 6:'six', 7:'seven', 8:'eight', 9:'nine'}
+            .col-md-4.col-xs-12.center-text-xs
+              img.full-img(src='/assets/images/dg-img-' + index + '.png' alt=val data-action='zoom' data-original='/assets/images/dg-img-' + index + '.png')
+        .row
+          .col-xs.center-text-xs.dark-bg
+            a.lg-link(href='/gallery') View all of the photos and videos from my projects.
+  //- services
+  .bg-lightgray.home-services
+    .container
+      .pad-container
+        .row
+          .col-xs.center-text-xs
+            h3 Services offered
+        .row          
+          each item in content.getGroup('home.services').toArray()                      
+            .col-md-4.col-xs-12.center-text-xs
+              p #{item.getText('service-type')}
+        .row
+          .col-xs-12.center-text-xs
+            a.lg-link(href='/services') Learn more about my services.        
+                
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
