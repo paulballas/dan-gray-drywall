@@ -1,0 +1,22 @@
+extends layout
+
+block settings
+  - var page = 'Services'
+  - var classes = ['services']
+  - var slug = 'services'
+  - var title = 'Dan Gray Drywall - Services'
+
+block content
+  .bg-blue
+    .container
+      .pad-container
+        .row.middle-xs
+          .col-xs-12.dark-bg.center-text-xs
+            h2 #{content.getText('services.hero')}
+        .space-2
+        .row
+          each item in content.getGroup('services.services').toArray()                      
+            .col-md-4.col-xs-6.center-text-xs.dark-bg
+              .service-type
+                img.full-img(src=item.getImage('icon').url)
+                p #{item.getText('service-type')}              

@@ -40,6 +40,11 @@ gulp.task('develop', function () {
   });
 });
 
+gulp.task('favicon', function() {
+  gulp.src('./src/fav/**')
+    .pipe(gulp.dest('./public'));
+});
+
 gulp.task('coffee', function() {
   gulp.src('./src/js/*.coffee')
     .pipe(coffee({bare: true}))
@@ -55,6 +60,7 @@ gulp.task('assets', function() {
 gulp.task('production', ['assets', 'sass', 'coffee']);
 
 gulp.task('default', [
+  'favicon',
   'assets',
   'sass',
   'develop',

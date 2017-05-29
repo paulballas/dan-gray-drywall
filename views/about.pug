@@ -1,0 +1,31 @@
+extends layout
+
+block settings
+  - var page = 'About'
+  - var classes = ['about']
+  - var slug = 'about'
+  - var title = 'Dan Gray Drywall - About'
+
+block content
+  .about-hero
+    .bg-blue
+      .container
+        .pad-container
+          .row.middle-xs
+            .col-md-6.col-xs-12.dark-bg
+              h2 #{content.getText('about.hero')}
+              p #{content.getText('about.dan-bio')}
+            .col-md-6.col-xs-12
+              img.full-img(src='/assets/images/dan-gray-headshot.png' alt='Dan Gray Headshot')
+  .about-action
+    .container
+      .pad-container
+        .row
+          .col-xs-12.center-text-xs
+            h3 Watch me in action.
+          .col-md-6.col-xs-12
+            video.full-video(loop muted controls)
+              source(src='/assets/videos/about-video-1.mp4' type='video/mp4')
+          .col-md-6.col-xs-12
+            video.full-video(loop muted controls)
+              source(src='/assets/videos/about-video-2.mp4' type='video/mp4')                            
