@@ -9,6 +9,10 @@ p, span, a
 b
   +font(500)
 
+.grid-sizer,
+.grid-item
+  width: 33.33%
+
 .extra-bold
   +font(600)
 
@@ -69,3 +73,13 @@ img
   margin-bottom: ms(0)
 a.lg-link
   font-size: ms(1)
+
+.review
+  background: $white
+  padding: ms(0)
+  margin-bottom: ms(1)
+  +container-border($darkgray)
+  *
+    color: $black
+  img
+    max-height: ms(3)

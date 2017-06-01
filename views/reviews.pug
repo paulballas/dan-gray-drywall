@@ -1,0 +1,45 @@
+extends layout
+
+block settings
+  - var page = 'Reviews'
+  - var classes = ['reviews']
+  - var slug = 'reviews'
+  - var title = 'Dan Gray Drywall - Reviews'
+
+block content
+  .bg-lightgray
+    .container
+      .pad-container
+        .row
+          .col-xs-12.center-text-xs
+            h2 #{content.getText('reviews.hero')}
+        .space-2      
+        .row
+          each rev, index in content.getGroup('reviews.review-group').toArray()            
+            if index % 2 === 0              
+              .col-md-5.col-xs-12
+                .review.center-text-xs                                    
+                  img.full-img.center-img(src='/assets/images/stars.svg' alt='stars')
+                  .space-1
+                  != rev.getStructuredText('review-body').asHtml(ctx.linkResolver)
+                  .separate
+                  p
+                    b #{rev.getText('author')} 
+                    br
+                    b #{rev.getText('location')}
+            else
+              .col-md-7.col-xs-12
+                .review.center-text-xs                                  
+                  img.full-img.center-img(src='/assets/images/stars.svg' alt='stars')
+                  .space-1
+                  != rev.getStructuredText('review-body').asHtml(ctx.linkResolver)
+                  .separate
+                  p
+                    b #{rev.getText('author')} 
+                    br
+                    b #{rev.getText('location')}
+        .row
+          .col-xs-12.center-text-xs
+            p
+              a(href='https://www.yelp.com/biz/specialized-construction-services-westminster-2' target='_blank') Read all of my reviews.
+              
