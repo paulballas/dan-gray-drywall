@@ -1,0 +1,47 @@
+extends layout
+
+block settings
+  - var page = 'Contact'
+  - var classes = ['contact']
+  - var slug = 'contact'
+  - var title = 'Dan Gray Drywall - Contact'
+  - var contactBanner = true
+
+block content
+  .bg-blue
+      .container
+        .pad-container
+          .row
+            .col-xs-12.dark-bg
+              h2 Contact Dan
+              p 
+                b.extra-bold I look forward to working with you!
+                br            
+                | To get started you can either schedule time on my calendar or send me a more detailed message using the form below.
+              a.btn-default.uppercase.btn-red(href='https://calendly.com/dangraydrywall') schedule time on my calendar
+          .space-2          
+          form(data-location='contact' action='https://formspree.io/dan@dangraydrywall.com' method='POST')
+            .row
+              .col-xs-12.col-md-6
+                .form-item
+                  label Name
+                  input(type='text' placeholder='Michael Smith' name='firstName' class='form-control')
+              .col-xs-12.col-md-6
+                .form-item
+                  label Email
+                  input(type='email' placeholder='michael@email.com' name='email' class='form-control')
+              .col-xs-12.col-md-6
+                .form-item
+                  label Phone
+                  input(type='tel' placeholder='(555)555-555' name='phone' class='form-control')
+              .col-xs-12.col-md-6
+                .form-item
+                  label Address
+                  input(type='text' placeholder='555 W Ave. Denver, CO 80211' name='email' class='form-control')
+              .col-xs-12
+                .form-item
+                  label Message
+                  textarea(placeholder='I need drywall help!' name='message' class='form-control' rows='4')
+              .col-xs-12
+                .form-item.no-margin-bottom
+                  input(type='submit' value='Submit' class='btn-large btn-default btn-red uppercase no-margin-bottom')

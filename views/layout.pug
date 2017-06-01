@@ -65,16 +65,14 @@ html(lang='en' class= classes data-page= page )
                 li
                   a(href='/contact' class=(slug === 'contact' ? 'contact' : '')) Contact
     block contact
-      .contact-banner.bg-red
-        .pad-container-xs
-          .container
-            .row
-              .col-xs-12.dark-bg.center-xs
-                p.m-b-xs-0 Send Dan a text 
-                  a.no-underline(href='tel:720921-5596') (720) 921-5596 
-                  | or email 
-                  a.no-underline(href='mailto:dan@dangraydrywall.com') dan@dangraydrywall.com 
-                  | to get started.
+      if contactBanner != true
+        .contact-banner.bg-red
+          .pad-container-xs
+            .container
+              .row
+                .col-xs-12.dark-bg.center-xs
+                  p.m-b-xs-0 Send Dan a text 
+                    a.no-underline(href='tel:720921-5596') (720) 921-5596 to get started.                  
     block content
     block footer      
       .footer.bg-blue.light

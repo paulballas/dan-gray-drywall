@@ -1,0 +1,21 @@
+extends layout
+
+block settings
+  - var page = 'Gallery'
+  - var classes = ['gallery']
+  - var slug = 'gallery'
+  - var title = 'Dan Gray Drywall - Gallery'
+  
+block content
+  .bg-brown
+    .container
+      .pad-container
+        .row
+          .col-xs-12.dark-bg
+            h3 #{content.getText('gallery.hero')}
+        .space-2
+        .row.gallery-group
+          each image in content.getGroup('gallery.images').toArray()
+            .col-md-4.col-xs-12
+              img.full-img(src=image.getImage('img').url data-action='zoom' data-original=image.getImage('img').url)
+            
